@@ -57,6 +57,7 @@ internal class AlbumArtContentProvider : ContentProvider() {
 
         if (!file.exists()) {
             // Use Glide to download the album art.
+
             val cacheFile = Glide.with(context)
                 .asFile()
                 .load(remoteUri)

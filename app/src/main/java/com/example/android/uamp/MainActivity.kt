@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        Log.d("UAMPAA", "UAMP activity is now started.")
         // Initialize the Cast context. This is required so that the media route button can be
         // created in the AppBar
         castContext = CastContext.getSharedInstance(this)

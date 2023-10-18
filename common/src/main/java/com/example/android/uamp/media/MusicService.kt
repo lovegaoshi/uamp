@@ -167,7 +167,7 @@ open class MusicService : MediaBrowserServiceCompat() {
     @ExperimentalCoroutinesApi
     override fun onCreate() {
         super.onCreate()
-
+        Log.d("UAMP", "uamp is now created.")
         // Build a PendingIntent that can be used to launch the UI.
         val sessionActivityPendingIntent =
             packageManager?.getLaunchIntentForPackage(packageName)?.let { sessionIntent ->
@@ -316,7 +316,7 @@ open class MusicService : MediaBrowserServiceCompat() {
         parentMediaId: String,
         result: Result<List<MediaItem>>
     ) {
-
+        Log.d("UAMPAA", "onLoadChildren($parentMediaId)")
         /**
          * If the caller requests the recent root, return the most recently played song.
          */
